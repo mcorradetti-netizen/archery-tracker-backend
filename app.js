@@ -10,8 +10,7 @@ const app = express();
 
 app.use(cors({
   origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type"]
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 }));
 
 app.options("*", cors());
